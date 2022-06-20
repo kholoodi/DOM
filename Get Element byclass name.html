@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <div id="first-div">
+    <h1>Programming Languages</h1>
+    <ul>
+    <li class="languages-p">HTML</li>
+    <li class="languages-p">CSS</li>
+    <li class="languages-p">JavaScript</li>
+    </ul>
+    </div>
+    <div>
+ 
+    </div>
+    <script>
+        //get elemnt by class name
+        //return all elements in spcefic class as array
+        let language = document.getElementsByClassName("languages-p");
+        console.log(language);
+        console.log(language[1]); // access to element in class 
+    </script>
+  </body>
+</html>

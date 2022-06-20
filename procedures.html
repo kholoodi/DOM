@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <div id="first-div">
+    <h1>Programming Languages</h1>
+    <ul>
+    <li id="first-li">HTML</li>
+    <li id="second-li">CSS</li>
+    <li id="last-li">JavaScript</li>
+    </ul>
+    </div>
+    <div>
+    <input type="checkbox">
+    <button>I Love the Aove Programming Languages</button>
+    </div>
+    <script>
+        //Access to first child (element) in body 
+        /*let firstChild = document.body.firstElementChild;
+          console.log(firstChild);*/
+
+        //Acess to last child in body 
+        /*let lastChild = document.body.lastElementChild;
+          console.log(lastChild);*/
+
+        //Access to all children nodes to the <ul> tag 
+           /*let ulChildren = document.body.firstElementChild.lastElementChild.childNodes;
+            //By using index can access to spceific elelment (child node )
+            //let liChildren = document.body.firstElementChild.lastElementChild.childNodes[1]; 
+           // console.log(ulChildren)
+        //Access to parent
+        //let theParent = liChildren.parentNode;
+        //console.log(theParent);*/
+
+        //Access to netx siblings example to want access to second li :
+        let nextSibling = document.firstElementChild.lastElementChild.firstElementChild.lastElementChild.firstElementChild.nextElementSibling;
+        console.log(nextSibling);
+
+
+
+
+    </script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <div >
+    <h1>Programming Languages</h1>
+    <ul class="list">
+    <li >HTML</li>
+    <li >CSS</li>
+    <li >JavaScript</li>
+    </ul>
+    </div>
+    <div>
+ 
+    </div>
+    <script>
+        //Remove Element from nood tree 
+        let languagesList = document.querySelector('.list');
+        let js = document.querySelectorAll('li')[2]; //index
+        js.remove();
+        console.log(languagesList);
+        
+    </script>
+  </body>
+</html>

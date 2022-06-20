@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <div id="first-div">
+    <h1>Programming Languages</h1>
+    <ul class ="languages">
+    <li >HTML</li>
+    <p>We can cerate web pages with HTML</p>
+    <li >CSS</li>
+    <p>We can change how web pages look with CSS</p>
+    <li >JavaScript</li>
+    <p>Wecan interactive with web page by JavaScript</p>
+    </ul>
+    </div>
+    <div>
+ 
+    </div>
+    <script>
+        //get class elements
+        //to print all class's elements 
+        let text = document.querySelector('.languages') //useing # if id like css
+        console.log(text);
+        //print first <p> in languages class
+        text = document.querySelector('.languages p')
+        console.log(text);
+        //return array of  all <p> in languages class
+            text = document.querySelectorAll('.languages p')
+        console.log(text);
+    </script>
+  </body>
+</html>

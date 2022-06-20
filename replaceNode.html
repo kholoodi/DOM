@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Dom</title>
+  </head>
+  <body>
+    <div id="parentDiv">Parent Node </div>
+
+    <script>
+
+        //create element node
+        let newNode = document.createElement("span");
+        // Get the old node
+        let oldNode = document.getElementById("parentDiv");
+        let parentNode = oldNode.parentNode;
+        // Replace the first child node of <ul> with the newly created text node
+        parentNode.replaceChild(newNode, oldNode);
+
+    </script>
+  </body>
+</html>

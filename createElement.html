@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <div >
+    <h1>Programming Languages</h1>
+    <ul class="list">
+    <li >HTML</li>
+    <li >CSS</li>
+    <li >JavaScript</li>
+    </ul>
+    </div>
+    <div>
+ 
+    </div>
+    <script>
+        //createElement
+        let languagesList = document.querySelector('.list');
+        let ruby = document.createElement('li'); //creale a new <li> tag
+        ruby.innerText ='Ruby'; // add text to the new <il> tag 
+        languagesList.append(ruby); // add the new <li> tag to class list 
+        console.log(languagesList);
+        
+    </script>
+  </body>
+</html>
